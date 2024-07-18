@@ -21,7 +21,7 @@ PoS Integrado Interprete, nace como la evolución tecnológica de PoS integrado 
 
 ### Herramientas
 - Librería vpiPc.dll
-
+- Manual de vpiPc.dll
 
 ### Diferencias
 - No admite multicomercio
@@ -33,6 +33,4 @@ PoS Integrado Interprete, nace como la evolución tecnológica de PoS integrado 
 3. Puede tener un usuario administrador y varios colaboradores
 4. Interfaz amigable con desarrolladores
 
-
-[duckduc Go](https://duckduckgo.com)
 
