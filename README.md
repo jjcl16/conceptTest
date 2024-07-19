@@ -9,8 +9,8 @@ PoS Integrado Interprete, nace como la evolución tecnológica de PoS integrado 
 
 ### Funcionalidades
 - [Venta](Funcionalidades/Venta.md).
-- Venta + Extracción.
-- Venta con QR, incluida transferencias.
+- [Venta + Extracción](Funcionalidades/Venta+Extracción.md).
+- [Venta con QR](Funcionalidades/VentaQR.md), incluida transferencias.
 - Anulación.
 - Cierre de lote.
 - Devolución.
@@ -20,8 +20,7 @@ PoS Integrado Interprete, nace como la evolución tecnológica de PoS integrado 
 - Consulta de planes a aplicar por tarjeta.
 
 ### Herramientas
-- Librería vpiPc.dll
-- Manual de vpiPc.dll
+- Librería de integración
 
 ### Diferencias
 - No admite multicomercio
