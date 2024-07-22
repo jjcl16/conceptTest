@@ -11,9 +11,9 @@ PoS Integrado Interprete, nace como la evolución tecnológica de PoS integrado 
 - [Venta](Funcionalidades/Venta.md).
 - [Venta + Extracción](Funcionalidades/Venta+Extracción.md).
 - [Venta con QR](Funcionalidades/VentaQR.md), incluida transferencias.
-- Anulación.
+- [Anulación](Funcionalidades/Anulacion.md).
 - Cierre de lote.
-- Devolución.
+- [Devolución](Funcionalidades/Devolucion.md).
 - Consulta de último cierre de lote.
 - Consulta de última transacción.
 - Consulta de tarjetas disponibles para operar.
@@ -23,7 +23,9 @@ PoS Integrado Interprete, nace como la evolución tecnológica de PoS integrado 
 - Librería de integración
 
 ### Diferencias
-- No admite multicomercio
+- No admite multicomercio.
+- No permite Pre Autorizaciones.
+- No permite transacciones offline.
 <!-- $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \sum_{k=1}^n a_k b_k \int sadas$$ -->
 
 ### Por qué hacerlo en Github
