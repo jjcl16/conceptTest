@@ -5,7 +5,7 @@ La venta es la principal transacción a realizar con la terminal, existen la pos
 - Realizar la transacción con cualquier marca de tarjeta.
 - Realizar la transacción con una marca de tarjeta en especifico.
 
-En ambas formas se utiliza el método **vpiPurchaseMark** de la libreria de integración:
+En ambas formas se utiliza el método **vpiPurchaseMark** de la libreria de integración.
 
 ````c 
 Int vpiPurchaseMark(vpiPurchaseIn_t* input, vpiTrxMarkOut1_t* output, LONG timeout)
@@ -23,7 +23,7 @@ typedef struct PURCHASE_IN{
 	LPSTR planCode;         // Código de plan  
 	LPSTR tip;              // Propina x100
 	LPSTR merchantCode;     // Código de comercio a utilizar
-	LPSTR merchantName;     // Razon social del comercio
+	LPSTR merchantName;     // Razón social del comercio
 	LPSTR cuit;             // CUIT del comercio
 	char  linemode;         // transaccion Online (1)
 }vpiPurchaseIn_t;  
@@ -56,7 +56,27 @@ Para realizar una transacción con cualquier marca de tarjeta, siempre y cuando 
 ### Transacción con una marca de tarjeta en especifico 
 Para realizar una transacción con una marca de tarjeta en especifico, se debe indicar en el parámetro **issuerCode** del vpiPurchaseIn_t el código correspondiente.
 
-Para conocer los issuerCode o códigos de tarjetas disponibles para transaccionar en la terminal, se puede realizar la [consulta de tarjetas](Funcionalidades/consultaTarjetas.md)
+Para conocer los issuerCode o códigos de tarjetas disponibles para transaccionar en la terminal, se puede realizar la [consulta de tarjetas](./consultaTarjetas.md)
 
-
-
+## Posibles Retorno del Método
+Los posibles valores de retorno del método son los siguientes:
+````c
+VPI_OK
+VPI_FAIL
+VPI_TIMEOUT_EXP
+VPI_INVALID_IN_CMD
+VPI_INVALID_IN_PARAM
+VPI_INVALID_OUT_CMD
+VPI_GENERAL_FAIL
+VPI_INVALID_ISSUER
+VPI_INVALID_TICKET
+VPI_EMPTY_BATCH
+VPI_TRX_CANCELED
+VPI_DIF_CARD
+VPI_INVALID_CARD
+VPI_EXPIRED_CARD
+VPI_INVALID_TRX 
+VPI_ERR_COM
+VPI_ERR_PRINT
+````
+En la sección [códigos de respuesta](../Libreria/codigosRespuesta.md) de la librería de integración se pueden ver la tabla de valores para estas respuestas

@@ -1,0 +1,1 @@
+![ejemplocomandos indexados](..\images\ComandosIndexados.PNG)

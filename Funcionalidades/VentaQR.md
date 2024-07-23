@@ -39,7 +39,6 @@ typedef struct QRZ_OUT {
 El QR en PoS integrado no tiene la capacidad de restringir el pago a una marca de tarjeta en específico, la terminal va a mostrar un código QR estático y será el Gateway de QR quien habilitará las opciones de pago que correspondan según lo enviado en el vpiQrzIn_t, podemos ver esto en los [ejemplos](#ejemplos). 
 
 ## Transferencias 3.0
-
 En caso de que la intención haya sido pagada con una transferencia, los valores de algunos parametros de la estructura de respuesta van a tener valores por defecto que son importantes de tener en cuenta.
 - cardCod: 0PI
 - lastFour: 0000
@@ -69,3 +68,26 @@ Se crea una intención con los siguientes parámetros (vpiQrzIn_t):
 - planCod: 0
 
 Está intención solo podría ser pagada con tarjetas de crédito Visa o Mastercard, siempre y cuando el "billeterahabiente" tenga cargada en su billetera alguna de estas tarjetas, ya que son los unicos medios que tiene cargada la terminal (en este ejemplo) con los que se puede operar en cuotas.
+
+## Posibles Retorno del Método
+Los posibles valores de retorno del método son los siguientes:
+````c
+VPI_OK
+VPI_FAIL
+VPI_TIMEOUT_EXP
+VPI_INVALID_IN_CMD
+VPI_INVALID_IN_PARAM
+VPI_INVALID_OUT_CMD
+VPI_GENERAL_FAIL
+VPI_INVALID_ISSUER
+VPI_INVALID_TICKET
+VPI_EMPTY_BATCH
+VPI_TRX_CANCELED
+VPI_DIF_CARD
+VPI_INVALID_CARD
+VPI_EXPIRED_CARD
+VPI_INVALID_TRX 
+VPI_ERR_COM
+VPI_ERR_PRINT
+````
+En la sección [códigos de respuesta](../Libreria/codigosRespuesta.md) de la librería de integración se pueden ver la tabla de valores para estas respuestas

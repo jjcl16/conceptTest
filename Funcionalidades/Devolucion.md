@@ -1,6 +1,14 @@
-# Devolución
+# Devolución de venta
+La devolución es una operación que permite revertir una venta que no se encuentra en el lote actual de la terminal.
 
+La devolución se realiza con el método **vpiRefund** de la librería de integración.
 
+````c
+Int vpiRefund(vpiRefundIn_t* input, vpiTrxOut_t* output, LONG timeout)
+````
+Este método cuenta con dos estructuras como parámetros:
+
+La información que se envia a la terminal con los datos de la transacción a devolver, la estructura de entrada, vpiRefundIn_t:
 ````c
 typedef struct REFUND_IN{   
         LPSTR amount;           // Monto *100  
@@ -33,4 +41,31 @@ typedef struct TRX_OUT{
 }vpiTrxOut_t;
 ````
 
-Devoluciones QR
+### Aclaración transferencias 3.0  
+Las anulaciones y devoluciones de T3.0 se denominan como "forzadas", es decir, se realizan sin intervención del "billeterahabiente". Al enviar el comando de anulación de una venta QR que fue pagada con T3.0, la terminal va a iniciar y finalizar el proceso por si misma (comunicandose con los servicios de T3.0).
+De igual manera, los siguientes parámetros vendran preseteados de la siguiente manera, únicamente para el caso de Transferencias 3.0:
+- panFirst6: 000000
+- panLast4: 0000
+
+## Posibles Retorno del Método
+Los posibles valores de retorno del método son los siguientes:
+````c
+VPI_OK
+VPI_FAIL
+VPI_TIMEOUT_EXP
+VPI_INVALID_IN_CMD
+VPI_INVALID_IN_PARAM
+VPI_INVALID_OUT_CMD
+VPI_GENERAL_FAIL
+VPI_INVALID_ISSUER
+VPI_INVALID_TICKET
+VPI_EMPTY_BATCH
+VPI_TRX_CANCELED
+VPI_DIF_CARD
+VPI_INVALID_CARD
+VPI_EXPIRED_CARD
+VPI_INVALID_TRX 
+VPI_ERR_COM
+VPI_ERR_PRINT
+````
+En la sección [códigos de respuesta](../Libreria/codigosRespuesta.md) de la librería de integración se pueden ver la tabla de valores para estas respuestas

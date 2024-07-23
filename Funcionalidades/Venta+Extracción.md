@@ -17,7 +17,7 @@ typedef struct PURCHASE_IN{
 	LPSTR planCode;         // Código de plan  
 	LPSTR tip;              // Extracash x100
 	LPSTR merchantCode;     // Código de comercio a utilizar
-	LPSTR merchantName;     // Razon social del comercio
+	LPSTR merchantName;     // Razón social del comercio
 	LPSTR cuit;             // CUIT del comercio
 	char  linemode;         // transaccion Online(1)
 }vpiPurchaseIn_t;
@@ -26,3 +26,26 @@ typedef struct PURCHASE_IN{
 Respecto a la estructura de salida, se comparte la misma que con el método de venta común.
 
 Por último, tambien se comparte la capacidad de realizar la Venta + Extracción con una tarjeta en específico o con cualquier tarjeta (mientras sea débito o prepaga) con el issuerCode "**VVI**".
+
+## Posibles Retorno del Método
+Los posibles valores de retorno del método son los siguientes:
+````c
+VPI_OK
+VPI_FAIL
+VPI_TIMEOUT_EXP
+VPI_INVALID_IN_CMD
+VPI_INVALID_IN_PARAM
+VPI_INVALID_OUT_CMD
+VPI_GENERAL_FAIL
+VPI_INVALID_ISSUER
+VPI_INVALID_TICKET
+VPI_EMPTY_BATCH
+VPI_TRX_CANCELED
+VPI_DIF_CARD
+VPI_INVALID_CARD
+VPI_EXPIRED_CARD
+VPI_INVALID_TRX 
+VPI_ERR_COM
+VPI_ERR_PRINT
+````
+En la sección [códigos de respuesta](../Libreria/codigosRespuesta.md) de la librería de integración se pueden ver la tabla de valores para estas respuestas
