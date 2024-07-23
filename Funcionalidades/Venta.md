@@ -49,11 +49,11 @@ typedef struct TRXMARK1_OUT {
     LPSTR promoMsg;         // Mensaje promocional
 }vpiTrxMarkOut1_t;
 ````
----
-### Transacción sin restricción de marca de tarjeta 
+
+## Transacción sin restricción de marca de tarjeta 
 Para realizar una transacción con cualquier marca de tarjeta, siempre y cuando sea una marca que este dada de alta en la terminal, se debe indicar en el parámetro **issuerCode** el código **"VVI"** del vpiPurchaseIn_t. 
 
-### Transacción con una marca de tarjeta en especifico 
+## Transacción con una marca de tarjeta en especifico 
 Para realizar una transacción con una marca de tarjeta en especifico, se debe indicar en el parámetro **issuerCode** del vpiPurchaseIn_t el código correspondiente.
 
 Para conocer los issuerCode o códigos de tarjetas disponibles para transaccionar en la terminal, se puede realizar la [consulta de tarjetas](./consultaTarjetas.md)
@@ -80,3 +80,19 @@ VPI_ERR_COM
 VPI_ERR_PRINT
 ````
 En la sección [códigos de respuesta](../Libreria/codigosRespuesta.md) de la librería de integración se pueden ver la tabla de valores para estas respuestas
+
+---
+#### Otros enlaces
+- [Principal](../README.md).
+- [Manejo de puertos](./Puertos.md)
+- [Prueba de comunicación](./ComTest.md)
+- [Venta](./Venta.md).
+- [Venta + Extracción](./Venta+Extracción.md).
+- [Venta con QR](./VentaQR.md) + pago con transferencias.
+- [Anulacion](./Anulacion.md)
+- [Cierre de lote](./cierreLote.md).
+- [Devolución](./Devolucion.md).
+- [Consulta de último cierre de lote](./consultaCierre.md).
+- [Consulta de última transacción](./consultaUltTransaccion.md).
+- [Consulta de tarjetas](./consultaTarjetas.md) disponibles para operar.
+- [Consulta de planes](./consultaPlanes.md) a aplicar por tarjeta.

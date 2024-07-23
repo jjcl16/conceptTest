@@ -39,3 +39,19 @@ VPI_ERR_COM
 VPI_ERR_PRINT
 ````
 En la sección [códigos de respuesta](../Libreria/codigosRespuesta.md) de la librería de integración se pueden ver la tabla de valores para estas respuestas
+
+---
+#### Otros enlaces
+- [Principal](../README.md).
+- [Manejo de puertos](./Puertos.md)
+- [Prueba de comunicación](./ComTest.md)
+- [Venta](./Venta.md).
+- [Venta + Extracción](./Venta+Extracción.md).
+- [Venta con QR](./VentaQR.md) + pago con transferencias.
+- [Anulacion](./Anulacion.md)
+- [Cierre de lote](./cierreLote.md).
+- [Devolución](./Devolucion.md).
+- [Consulta de último cierre de lote](./consultaCierre.md).
+- [Consulta de última transacción](./consultaUltTransaccion.md).
+- [Consulta de tarjetas](./consultaTarjetas.md) disponibles para operar.
+- [Consulta de planes](./consultaPlanes.md) a aplicar por tarjeta.

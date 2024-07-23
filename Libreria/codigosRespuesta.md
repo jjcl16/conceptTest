@@ -25,3 +25,19 @@
 #define VPI_GENERAL_FAIL        909 // Error general en la operación.
 
 ````
+
+---
+#### Otros enlaces
+- [Principal](../README.md).
+- [Manejo de puertos](../Funcionalidades/Puertos.md)
+- [Prueba de comunicación](../Funcionalidades/ComTest.md)
+- [Venta](../Funcionalidades/Venta.md).
+- [Venta + Extracción](../Funcionalidades/Venta+Extracción.md).
+- [Venta con QR](../Funcionalidades/VentaQR.md) + pago con transferencias.
+- [Anulación](../Funcionalidades/Anulacion.md)
+- [Cierre de lote](../Funcionalidades/cierreLote.md).
+- [Devolución](../Funcionalidades/Devolucion.md).
+- [Consulta de último cierre de lote](../Funcionalidades/consultaCierre.md).
+- [Consulta de última transacción](../Funcionalidades/consultaUltTransaccion.md).
+- [Consulta de tarjetas](../Funcionalidades/consultaTarjetas.md) disponibles para operar.
+- [Consulta de planes](../Funcionalidades/consultaPlanes.md) a aplicar por tarjeta.

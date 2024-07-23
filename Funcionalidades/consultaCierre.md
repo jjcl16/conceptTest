@@ -29,10 +29,7 @@ typedef struct BATCHCLOSEDATA_OUT{
 }vpiBatchCloseDataOut_t;
 ````
 
-
-Al ser un comando indexado, puedes consultar la sección de [comandos indexados](../Libreria/comandosIndexados.md) de la libreria de integración o bien el siguiente diagrama de flujos, que ejemplifica la [consulta de Tarjetas](consultaTarjetas.md) que tambien es un comando indexado.
-
-![ejemplocomandos indexados](..\images\ComandosIndexados.PNG)
+Al ser un comando indexado, se puede consultar la sección de [comandos indexados](../Libreria/comandosIndexados.md) de la libreria de integración para conocer el funcionamiento de este tipo de comandos.
 
 ### Aclaración transferencias 3.0  
 Para las transferencias al no existir una liquidación, ya que son inmediatas, no existe un cierre de lote que haya que presentar. Sin embargo, al consultar el último cierre y este incluya este tipo de operaciones, se incluirá un indice totalizando las operaciones realizadas con transferencias con el **issuerCode** 0PI.
@@ -56,3 +53,20 @@ VPI_INVALID_OUT_PARAM
 VPI_GENERAL_FAIL
 ````
 En la sección [códigos de respuesta](../Libreria/codigosRespuesta.md) de la librería de integración se pueden ver la tabla de valores para estas respuestas
+
+
+---
+#### Otros enlaces
+- [Principal](../README.md).
+- [Manejo de puertos](./Puertos.md)
+- [Prueba de comunicación](./ComTest.md)
+- [Venta](./Venta.md).
+- [Venta + Extracción](./Venta+Extracción.md).
+- [Venta con QR](./VentaQR.md) + pago con transferencias.
+- [Anulacion](./Anulacion.md)
+- [Cierre de lote](./cierreLote.md).
+- [Devolución](./Devolucion.md).
+- [Consulta de último cierre de lote](./consultaCierre.md).
+- [Consulta de última transacción](./consultaUltTransaccion.md).
+- [Consulta de tarjetas](./consultaTarjetas.md) disponibles para operar.
+- [Consulta de planes](./consultaPlanes.md) a aplicar por tarjeta.

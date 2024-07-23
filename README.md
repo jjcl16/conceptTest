@@ -1,6 +1,6 @@
 # PoS Integrado Interprete
 
-PoS Integrado Interprete, nace como la evolución tecnológica de PoS integrado Legacy (Pax y Verifone), conservando la base del protocolo de comunicaión R232 a través de un cable USB.
+PoS Integrado Interprete, nace como la evolución tecnológica de PoS integrado Legacy (Pax y Verifone), conservando la base del protocolo de comunicación R232 a través de un cable USB.
 
 Para ello facilitamos una librería de integración, y mediante las funcionalidades de esta, interactuar con el PoS.
 
