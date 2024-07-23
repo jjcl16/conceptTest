@@ -25,7 +25,7 @@ Al ser un comando indexado, puedes consultar la sección de [comandos indexados]
 
 ## Posibles Retorno del Método
 Los posibles valores de retorno del método son los siguientes:
-````c
+````
 VPI_OK
 VPI_MORE_REC
 VPI_FAIL

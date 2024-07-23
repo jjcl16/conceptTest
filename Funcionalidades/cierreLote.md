@@ -26,7 +26,7 @@ Para las transferencias no existe una liquidación, ya que son inmediatas, por l
 
 ## Posibles Retorno del Método
 Los posibles valores de retorno del método son los siguientes:
-````c
+````
 VPI_OK
 VPI_FAIL
 VPI_TIMEOUT_EXP

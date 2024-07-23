@@ -39,7 +39,7 @@ Para las transferencias al no existir una liquidación, ya que son inmediatas, n
 
 ## Posibles Retorno del Método
 Los posibles valores de retorno del método son los siguientes:
-````c
+````
 VPI_OK
 VPI_MORE_REC
 VPI_FAIL

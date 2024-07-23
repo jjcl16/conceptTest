@@ -22,7 +22,7 @@ Para indentificar el PoS, lo hacemos dependiendo del parametro **versionMessage*
 ````
 ## Posibles Retorno del Método
 Los posibles valores de retorno del método son los siguientes:
-````c
+````
 VPI_OK
 VPI_FAIL 
 VPI_TIMEOUT_EXP

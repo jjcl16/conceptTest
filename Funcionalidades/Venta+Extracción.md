@@ -29,7 +29,7 @@ Por último, tambien se comparte la capacidad de realizar la Venta + Extracción
 
 ## Posibles Retorno del Método
 Los posibles valores de retorno del método son los siguientes:
-````c
+````
 VPI_OK
 VPI_FAIL
 VPI_TIMEOUT_EXP

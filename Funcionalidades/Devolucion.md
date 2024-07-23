@@ -49,7 +49,7 @@ De igual manera, los siguientes parámetros vendran preseteados de la siguiente 
 
 ## Posibles Retorno del Método
 Los posibles valores de retorno del método son los siguientes:
-````c
+````
 VPI_OK
 VPI_FAIL
 VPI_TIMEOUT_EXP

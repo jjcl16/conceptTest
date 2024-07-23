@@ -28,7 +28,7 @@ Int vpiClosePort()
 El puerto debe estar abierto para que la ejecución sea exitosa. Luego de ejecutar este comando, si se desea establecer nuevamente la comunicación con el PoS, se debe realizar la apertura del puerto.
 ## Posibles Retorno para ambos métodos
 Los posibles valores de retorno de los métodos son los siguientes:
-````c
+````
 VPI_OK
 VPI_FAIL
 ````
