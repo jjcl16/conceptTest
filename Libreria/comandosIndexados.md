@@ -9,6 +9,7 @@ VPI_MORE_REC:   Quedan registros por consultar.
 En el siguiente diagrama de flujos ejemplificamos como sería el caso del método consulta de tarjetas (vpiGetIssuer):
 
 ![ejemplocomandos indexados](../images/ComandosIndexados.PNG)
+
 Siendo esto replicable a los demás métodos indexados.
 
 Los métodos que comparten esta esquema son:
