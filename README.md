@@ -33,15 +33,17 @@ Para ello facilitamos una librería de integración, y mediante las funcionalida
 - No hay anulación de devoluciones.
 <!-- $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \sum_{k=1}^n a_k b_k \int sadas$$ -->
 
-<!-- ### Por qué hacerlo en Github
+<!-- 
+### Por qué hacerlo en Github
 1. Facil de actualizar
 2. Tiene sistema de notificaciones 
 3. Puede tener un usuario administrador y varios colaboradores
-4. Interfaz amigable con desarrolladores -->
+4. Interfaz amigable con desarrolladores 
+-->
 
-
+<!-- 
 ### Falta
-- KPA
+- KPA -->
 
 
 
