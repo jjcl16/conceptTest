@@ -23,10 +23,8 @@ Para ello facilitamos una librería de integración, y mediante las funcionalida
 - [Consulta de tarjetas](Funcionalidades/consultaTarjetas.md) disponibles para operar.
 - [Consulta de planes](Funcionalidades/consultaPlanes.md) a aplicar por tarjeta.
 
-### Herramientas
-- Librería de integración
 
-### Aplicaciones
+### Herramientas y Aplicaciones
 - [Libreria de integración](./Aplicaciones/Libreria/)
 - [TestVpi](./Aplicaciones/testVpi/)
 - [Billetera Integra](./Aplicaciones/Billetera/) (Billetera de pruebas QR estático)
@@ -36,19 +34,6 @@ Para ello facilitamos una librería de integración, y mediante las funcionalida
 - No permite Pre Autorizaciones.
 - No permite transacciones offline.
 - No hay anulación de devoluciones.
-<!-- $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} \sum_{k=1}^n a_k b_k \int sadas$$ -->
-
-<!-- 
-### Por qué hacerlo en Github
-1. Facil de actualizar
-2. Tiene sistema de notificaciones 
-3. Puede tener un usuario administrador y varios colaboradores
-4. Interfaz amigable con desarrolladores 
--->
-
-<!-- 
-### Falta
-- KPA -->
 
 
 
