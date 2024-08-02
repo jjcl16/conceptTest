@@ -6,7 +6,12 @@ Se realiza con el método **vpiGetIssuer** de la librería de integración.
 Int vpiGetIssuer(WORD index, vpiIssuerOut_t* output)
 ````
 
-Este método recibe como parámetros el indice a consultar y la estructura de salida, vpiIssuerOut_t :
+Este método recibe como parámetros el indice a consultar:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   index		    |        4          |
+
+La estructura de salida, vpiIssuerOut_t :
 
 ````c
 typedef struct ISSUER_OUT{   
@@ -18,6 +23,16 @@ typedef struct ISSUER_OUT{
 	LPSTR terminalID;       // Terminal id
 }vpiIssuerOut_t;
 ````
+Teniendo como largo máximo para estos valores:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   index		    |        4          |
+|   acquirerCode    |        3          |
+|   issuerCode      |        3          |
+|   issuerName	    |        16	        |
+|	maxInstCount	|		 22			|
+|   terminalID	    |        8          |
+
 
 Al ser un comando indexado, se puede consultar la sección de [comandos indexados](../Libreria/comandosIndexados.md) de la libreria de integración para conocer el funcionamiento de este tipo de comandos.
 

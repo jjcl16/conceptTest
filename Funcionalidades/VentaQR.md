@@ -17,6 +17,13 @@ typedef struct QRZ_IN {
 	LPSTR planCod;	    //Código de plan.	
 }vpiQrzIn_t;
 ````
+Cumpliendo con las siguientes caracteristicas: 
+
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   ammount         |       12          | 
+|   cantCoutas		|       2           |
+|   planCod         |       1           |
 
 Estructura de salida, vpiQrzOut_t:
 ````c
@@ -36,6 +43,23 @@ typedef struct QRZ_OUT {
 	LPSTR impCobrado;       //Importe cobrado	
 }vpiQrzOut_t;
 ````
+Teniendo como largo máximo para estos valores:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   respcode    	|        2          |
+|   respMsg		    |        32         |
+|   authCode        |        6          |
+|   cuponNmb	    |        7          |
+|   loteNmb		    |        3          |
+|   lastFour        |        4          |
+|   firstSix	    |        6          |
+|   trxDate         |        10         |
+|   trxHr           |        8          |
+|   terminalID      |        8          |
+|   cardCod		    |        3          |
+|   impTotal        |        12         |
+|   impCobrado      |        12         |
+
 El QR en PoS integrado no tiene la capacidad de restringir el pago a una marca de tarjeta en específico, la terminal va a mostrar un código QR estático y será el Gateway de QR quien habilitará las opciones de pago que correspondan según lo enviado en el vpiQrzIn_t, podemos ver esto en los [ejemplos](#ejemplos). 
 
 ## Transferencias 3.0

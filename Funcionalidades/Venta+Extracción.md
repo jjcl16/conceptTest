@@ -22,8 +22,21 @@ typedef struct PURCHASE_IN{
 	char  linemode;         // transaccion Online(1)
 }vpiPurchaseIn_t;
 ````
+Cumpliendo con las siguientes caracteristicas:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   amount          |       12          |
+|   receiptNumber   |       12          |  
+|   instalmentCount |       2           |
+|   issuerCode      |       3           |
+|   planCode        |       1           |
+|   tip             |       12          |
+|   merchantCode    |       15          |
+|   merchantName    |       23          |
+|   cuit            |       23          |
+|   linemode        |       1           |
 
-Respecto a la estructura de salida, se comparte la misma que con el método de venta común.
+Respecto a la estructura de salida, se comparte la misma que con el método de [venta](./Venta.md).
 
 Por último, tambien se comparte la capacidad de realizar la Venta + Extracción con una tarjeta en específico o con cualquier tarjeta (mientras sea débito o prepaga) con el issuerCode "**VVI**".
 

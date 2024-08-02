@@ -21,6 +21,14 @@ typedef struct BATCHCLOSE_OUT{
 	LPSTR terminalID;   // Terminal id
 }vpiBatchCloseOut_t;
 ````
+Teniendo como largo máximo para estos valores:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   hostRespCode    |        2          |
+|   date            |        10         |
+|   time            |        8          |
+|   terminalID      |        8          |
+
 ### Aclaración Transferencias 3.0
 Para las transferencias no existe una liquidación, ya que son inmediatas, por lo que no existe un cierre de lote que haya que presentar. Sin embargo, la terminal al momento de realizar el cierre incluirá en el cupón un totalizador de las operaciones realizadas con transferencias bajo la leyenda "Pagos Inmediatos".
 

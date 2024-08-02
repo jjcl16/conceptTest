@@ -6,7 +6,12 @@ Se realiza con el método **vpiGetPlan** de la librería de integración.
 Int vpiGetPlan(WORD index, vpiPlanOut_t* output)
 ````
 
-Este método recibe como parámetros el indice a consultar y la estructura de salida, vpiPlanOut_t :
+Este método recibe como parámetros el indice a consultar:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   index		    |        4          |
+
+La estructura de salida, vpiPlanOut_t :
 
 ````c
 typedef struct PLAN_OUT{	
@@ -17,6 +22,14 @@ typedef struct PLAN_OUT{
 	LPSTR terminalID;   // Terminal id
 }vpiPlanOut_t;
 ````
+Teniendo como largo máximo para estos valores:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   index		    |        4          |
+|   issuerCode	    |        3          |
+|   planCode        |        2          |
+|   planLabel	    |        14	        |
+|   terminalID	    |        8          |
 
 Al ser un comando indexado, se puede consultar la sección de [comandos indexados](../Libreria/comandosIndexados.md) de la libreria de integración para conocer el funcionamiento de este tipo de comandos.
 
