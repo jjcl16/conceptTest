@@ -26,6 +26,11 @@ Para ello facilitamos una librería de integración, y mediante las funcionalida
 ### Herramientas
 - Librería de integración
 
+### Aplicaciones
+- [Libreria de integración](./Aplicaciones/Libreria/)
+- [TestVpi](./Aplicaciones/testVpi/)
+- [Billetera Integra](./Aplicaciones/Billetera/) (Billetera de pruebas QR estático)
+
 ### Diferencias
 - No admite multicomercio.
 - No permite Pre Autorizaciones.
