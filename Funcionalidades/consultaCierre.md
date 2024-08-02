@@ -7,7 +7,12 @@ Esta consulta se realiza con el método **vpiGetBatchCloseData** de la librería
 Int vpiGetBatchCloseData(WORD index, vpiBatchCloseDataOut_t * output)
 ````
 
-Este método recibe como parámetros el indice a consultar y la estructura de salida, vpiBatchCloseDataOut_t :
+Este método recibe como parámetros el indice a consultar:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   index		    |        4          |
+
+ y la estructura de salida, vpiBatchCloseDataOut_t :
 
 ````c
 typedef struct BATCHCLOSEDATA_OUT{	
@@ -28,6 +33,25 @@ typedef struct BATCHCLOSEDATA_OUT{
 	LPSTR terminalID;       // Terminal id
 }vpiBatchCloseDataOut_t;
 ````
+Teniendo como largo máximo para estos valores:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   index		    |        4          |
+|   acquirerCode    |        3          |
+|   batchNumber     |        3          |
+|   issuerCode	    |        3	        |
+|	purchaseCount	|		 4			|
+|   purchaseAmount  |        12         |
+|	voidCount		|		 4			|
+|   voidAmount  	|        12         |
+|	refundCount		|		 4			|
+|   refundAmount  	|        12         |
+|	refvoidCount	|		 4			|
+|   refvoidAmount  	|        12         |
+|   date            |        10         |
+|   time            |        8          |
+|   terminalID      |        8          |
+
 
 Al ser un comando indexado, se puede consultar la sección de [comandos indexados](../Libreria/comandosIndexados.md) de la libreria de integración para conocer el funcionamiento de este tipo de comandos.
 

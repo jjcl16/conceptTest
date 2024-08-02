@@ -29,6 +29,20 @@ typedef struct TRX_OUT{
 	LPSTR terminalID;   //Terminal id
 }vpiTrxOut_t;
 ````
+Teniendo como largo máximo para estos valores:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   hostRespCode    |        2          |
+|   hostMessage     |        32         |
+|   authCode        |        6          |
+|   ticketNumber    |        7          |
+|   batchNumber     |        3          |
+|   customerName    |        26         |
+|   panFirst6       |        6          |
+|   panLast4        |        4          |
+|   date            |        10         |
+|   time            |        8          |
+|   terminalID      |        8          |
 
 ## Posibles Retorno del Método
 Los posibles valores de retorno del método son los siguientes:

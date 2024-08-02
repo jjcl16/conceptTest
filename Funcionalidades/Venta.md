@@ -28,6 +28,20 @@ typedef struct PURCHASE_IN{
 	char  linemode;         // transaccion Online (1)
 }vpiPurchaseIn_t;  
 ````
+Cumpliendo con las siguientes caracteristicas:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   amount          |       12          |
+|   receiptNumber   |       12          |  
+|   instalmentCount |       2           |
+|   issuerCode      |       3           |
+|   planCode        |       1           |
+|   tip             |       12          |
+|   merchantCode    |       15          |
+|   merchantName    |       23          |
+|   cuit            |       23          |
+|   linemode        |       1           |
+
 Estructura de salida, vpiTrxMarkOut1_t:
 ````c
 typedef struct TRXMARK1_OUT {    
@@ -49,6 +63,25 @@ typedef struct TRXMARK1_OUT {
     LPSTR promoMsg;         // Mensaje promocional
 }vpiTrxMarkOut1_t;
 ````
+Teniendo como largo máximo para estos valores:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   hostRespCode    |        2          |
+|   hostMessage     |        32         |
+|   authCode        |        6          |
+|   ticketNumber    |        7          |
+|   batchNumber     |        3          |
+|   customerName    |        26         |
+|   panLast4        |        4          |
+|   panFirst6       |        6          |
+|   date            |        10         |
+|   time            |        8          |
+|   terminalID      |        8          |
+|   issuerCode      |        3          |
+|   merchantCode    |        15         |
+|   aipEmv          |        15         |
+|   appEmv          |        15         |
+|   promoMsg        |        200        |
 
 ## Transacción sin restricción de marca de tarjeta 
 Para realizar una transacción con cualquier marca de tarjeta, siempre y cuando sea una marca que este dada de alta en la terminal, se debe indicar en el parámetro **issuerCode** el código **"VVI"** del vpiPurchaseIn_t. 

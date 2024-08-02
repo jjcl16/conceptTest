@@ -24,6 +24,21 @@ typedef struct REFUND_IN{
         char  linemode;         // transaccion Online(1) 
 }vpiRefundIn_t;
 ````
+Cumpliendo con las siguientes caracteristicas:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   amount          |       12          | 
+|   instalmentCount |       2           |
+|   issuerCode      |       3           |
+|   planCode        |       1           |
+|	originalTicket	|		7			|
+|	originalDate	|		10			|
+|   receiptNumber   |       12          | 
+|   merchantCode    |       15          |
+|   merchantName    |       23          |
+|   cuit            |       23          |
+|   linemode        |       1           |
+
 Estructura de salida, vpiTrxOut_t:
 ````c
 typedef struct TRX_OUT{   	
@@ -40,6 +55,21 @@ typedef struct TRX_OUT{
 	LPSTR terminalID;   //Terminal id
 }vpiTrxOut_t;
 ````
+Teniendo como largo máximo para estos valores:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   hostRespCode    |        2          |
+|   hostMessage     |        32         |
+|   authCode        |        6          |
+|   ticketNumber    |        7          |
+|   batchNumber     |        3          |
+|   customerName    |        26         |
+|   panFirst6       |        6          |
+|   panLast4        |        4          |
+|   date            |        10         |
+|   time            |        8          |
+|   terminalID      |        8          |
+
 
 ### Aclaración transferencias 3.0  
 Las anulaciones y devoluciones de T3.0 se denominan como "forzadas", es decir, se realizan sin intervención del "billeterahabiente". Al enviar el comando de anulación de una venta QR que fue pagada con T3.0, la terminal va a iniciar y finalizar el proceso por si misma (comunicandose con los servicios de T3.0).

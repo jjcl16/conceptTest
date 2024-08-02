@@ -17,6 +17,15 @@ typedef struct COM_PARAMS{
 	WORD  stopBits;     // Bits de parada: 1
 }comParams_t;
 ````
+Cumpliendo con las siguientes caracteristicas:
+|       Campo       |   Largo Máximo    |
+|:-----------------:|:-----------------:|
+|   com          	|       5          	|
+|   baudRate   		|       5          |  
+|   byteSize 		|       1          |
+|   parity      	|       1           |
+|   stopBits        |       1           |
+
 Para una ejecución exitosa el puerto debe estar cerrado y disponible.
 
 ## Cierre de puerto
