@@ -3,8 +3,8 @@
 /**
 * Codigos de retorno de las funciones
 */
-#define VPI_OK                  0   // Operacion exitosa
-#define VPI_MORE_REC            1   // Operacion exitosa, pero faltan registros
+#define VPI_OK                  0   // Comando procesado
+#define VPI_MORE_REC            1   // Comando procesado, pero faltan registros
 #define VPI_FAIL                11  // El comando no pudo ser enviado
 #define VPI_TIMEOUT_EXP         12  // Tiempo de espera agotado.
 #define VPI_INVALID_ISSUER      101 // El código de tarjeta no existe.

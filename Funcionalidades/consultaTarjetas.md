@@ -30,7 +30,7 @@ Teniendo como largo máximo para estos valores:
 |   acquirerCode    |        3          |
 |   issuerCode      |        3          |
 |   issuerName	    |        16	        |
-|	maxInstCount	|		 22			|
+|	maxInstCount	|		 2			|
 |   terminalID	    |        8          |
 
 
