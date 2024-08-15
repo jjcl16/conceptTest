@@ -1,4 +1,4 @@
-# Códigos de respuesta
+# Códigos de respuesta de la Librería
 ````c
 /**
 * Codigos de retorno de las funciones

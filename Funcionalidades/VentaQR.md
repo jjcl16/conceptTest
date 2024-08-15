@@ -30,7 +30,7 @@ Estructura de salida, vpiQrzOut_t:
 typedef struct QRZ_OUT {
 	LPSTR respcode;         //Código de respuesta del host.
 	LPSTR respMsg;          //Mensaje de respuesta. 
-	LPSTR authCod;          //Código de autorización   
+	LPSTR authCode;          //Código de autorización   
 	LPSTR cuponNmb;         //Número de cupón
 	LPSTR loteNmb;          //Número de lote.
 	LPSTR lastFour;         //Últimos 4 dígitos de la tarjeta.
@@ -115,6 +115,8 @@ VPI_ERR_COM
 VPI_ERR_PRINT
 ````
 En la sección [códigos de respuesta](../Libreria/codigosRespuesta.md) de la librería de integración se pueden ver la tabla de valores para estas respuestas
+
+En los comandos transaccionales, se debe tener en cuenta que el código de respuesta de la librería no implica que la transacción esté aprobada. El estado de la transacción se puede validar con el [hostRespCode](../Libreria/codigosRespuestaHost.md) recibido en la estructura de salida del método. 
 
 ---
 #### Otros enlaces
