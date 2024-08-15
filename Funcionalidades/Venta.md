@@ -39,7 +39,7 @@ Cumpliendo con las siguientes caracteristicas:
 |   tip             |       12          |
 |   merchantCode    |       15          |
 |   merchantName    |       23          |
-|   cuit            |       23          |v
+|   cuit            |       23          |
 |   linemode        |       1           |
 
 Estructura de salida, vpiTrxMarkOut1_t:
