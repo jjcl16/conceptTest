@@ -1,7 +1,13 @@
 # Prueba de comunicación
-Esta funcionalidad tiene como objetivo dos fines. Principalmente, verificar que la comunicación entre la terminal y la caja este establecida de manera correcta. Como segundo objetivo, podemos identificar que tipo de PoS está conectada a la caja.
+Existen dos métodos que se pueden implementar para chequear la comunicación. 
 
-El método a utilizar seria el **vpiGetVersion** de la librería de integración.
+Para verificar que la comunicación entre la terminal y la caja este establecida de manera correcta, se puede utilizar el método **vpiTestConnection** de la librería de integración. 
+
+````c
+Int vpiTestConnection()
+````
+
+Por otro lado, con el método **vpiGetVersion** podemos identificar que tipo de PoS está conectada a la caja.
 
 ````c
 Int vpiGetVersion(vpiVersionOut_t* output)
@@ -10,18 +16,18 @@ Int vpiGetVersion(vpiVersionOut_t* output)
 Este recibe una estructura de salida, vpiVersionOut_t:
 ````c
 typedef struct GETVERSION_OUT {
-	LPSTR versionMessage;  // Mensaje de respuesta de version 
+	WORD version;  // Mensaje de respuesta de version 
 } vpiVersionOut_t;
 ````
 
-Para indentificar el PoS, lo hacemos dependiendo del parametro **versionMessage** de la estrutura de retorno.
+Para indentificar el PoS, lo hacemos dependiendo del parametro **version** de la estrutura de retorno.
 ````c
-    Version         -----  versionMessage 
-    Legacy          -----       001
-    Interprete      -----       002
+    Version         -----  version 
+    Legacy          -----       1
+    Interprete      -----       2
 ````
 ## Posibles Retorno del Método
-Los posibles valores de retorno del método son los siguientes:
+Los posibles valores de retorno para ambos métodos son los siguientes:
 ````
 VPI_OK
 VPI_FAIL 
