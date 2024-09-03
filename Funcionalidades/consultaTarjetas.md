@@ -51,6 +51,15 @@ VPI_INVALID_INDEX
 ````
 En la sección [códigos de respuesta](../Libreria/codigosRespuesta.md) de la librería de integración se pueden ver la tabla de valores para estas respuestas
 
+En ambiente de pruebas, las terminales estan dadas de altas como minimo con las siguientes tarjetas:
+|       Marca       |  Cod. de Tarjeta  |
+|:-----------------:|:-----------------:|
+|   Visa		    |        0VI        |
+|   Visa Débito     |        0EL        |
+|   MasterCard      |        0MC        |
+|   MasterCard Debit|        0PD        |
+|	Maestro			|		 0MA		|
+
 ---
 #### Otros enlaces
 - [Principal](../README.md).
