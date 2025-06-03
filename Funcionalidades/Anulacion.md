@@ -57,11 +57,9 @@ Teniendo como largo máximo para estos valores:
 |   time            |        8          |
 |   terminalID      |        8          |
 
-### Aclaración transferencias 3.0  
-Las anulaciones y devoluciones de T3.0 se denominan como "forzadas", es decir, se realizan sin intervención del "billeterahabiente". Al enviar el comando de anulación de una venta QR que fue pagada con T3.0, la terminal va a iniciar y finalizar el proceso por si misma (comunicandose con los servicios de T3.0).
-De igual manera, los siguientes parámetros vendran preseteados de la siguiente manera, únicamente para el caso de Transferencias 3.0:
-- panFirst6: 000000
-- panLast4: 0000
+### Aclaración anulaciones y devoluciones de transacciones QR.  
+Las anulaciones y devoluciones de transacciones QR se denominan como "forzadas", es decir, se realizan sin intervención del "billeterahabiente". Al enviar el comando de anulación de una venta QR, la terminal va a iniciar y finalizar el proceso por si misma.
+Para Pagos con T3.0 solo se pueden realizar Devoluciones.
 
 ## Posibles Retorno del Método
 Los posibles valores de retorno del método son los siguientes:
