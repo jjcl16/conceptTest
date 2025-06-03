@@ -72,7 +72,7 @@ Teniendo como largo máximo para estos valores:
 
 
 ### Aclaración anulaciones y devoluciones de transacciones QR.  
-Las anulaciones y devoluciones de transacciones QR se denominan como "forzadas", es decir, se realizan sin intervención del "billeterahabiente". Al enviar el comando de anulación de una venta QR, la terminal va a iniciar y finalizar el proceso por si misma.
+Las anulaciones y devoluciones de transacciones QR se denominan como "forzadas", es decir, se realizan sin intervención del "billeterahabiente". Al enviar el comando de devolución de una venta QR, la terminal va a iniciar y finalizar el proceso por si misma.
 De igual manera, los siguientes parámetros vendran preseteados de la siguiente manera, únicamente para el caso de Transferencias 3.0:
 - panFirst6: 000000
 - panLast4: 0000
